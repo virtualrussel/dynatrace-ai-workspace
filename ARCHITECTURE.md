@@ -28,7 +28,7 @@ This workspace solves all four problems by combining three things: domain knowle
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    VS Code                               │
+│                    VS Code                              │
 │                                                         │
 │  ┌─────────────────┐      ┌──────────────────────────┐  │
 │  │  Copilot Chat   │      │   Integrated Terminal    │  │
@@ -37,13 +37,13 @@ This workspace solves all four problems by combining three things: domain knowle
 │  │  /troubleshoot  │      │  dtctl query "..."       │  │
 │  │  /standup       │      │  dtctl describe notebook │  │
 │  └────────┬────────┘      └────────────┬─────────────┘  │
-│           │                            │                 │
-│  ┌────────▼────────┐                   │                 │
-│  │  Agent Skills   │                   │                 │
-│  │  (13 skills)    │                   │                 │
-│  │  .agents/skills/│                   │                 │
-│  └────────┬────────┘                   │                 │
-└───────────┼────────────────────────────┼─────────────────┘
+│           │                            │                │
+│  ┌────────▼────────┐                   │                │
+│  │  Agent Skills   │                   │                │
+│  │  (13 skills)    │                   │                │
+│  │  .agents/skills/│                   │                │
+│  └────────┬────────┘                   │                │
+└───────────┼────────────────────────────┼────────────────┘
             │ MCP (stdio)                │ HTTPS + OAuth
             ▼                            ▼
 ┌───────────────────────────────────────────────────────────┐
