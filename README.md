@@ -56,7 +56,7 @@ dynatrace-ai-workspace/
 ### 1. Clone the workspace
 
 ```bash
-git clone git@github.com:virtualrussel/dynatrace-ai-workspace.git
+git clone https://github.com/virtualrussel/dynatrace-ai-workspace.git
 cd dynatrace-ai-workspace
 ```
 
