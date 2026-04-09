@@ -10,14 +10,26 @@ An AI-powered observability workspace for Dynatrace — combining GitHub Copilot
 
 ```
 dynatrace-ai-workspace/
+├── ARCHITECTURE.md               # How the workspace is built and how components connect
+├── README.md                     # Setup guide and quick reference
+├── skills-lock.json              # Locked skill versions
+├── .gitignore
 ├── .github/
 │   ├── copilot-instructions.md   # Auto-loaded workspace rules every Copilot session
-│   └── prompts/                  # 6 slash command investigation workflows
+│   └── prompts/                  # 7 slash command investigation workflows
+│       ├── health-check.prompt.md
+│       ├── daily-standup.prompt.md
+│       ├── daily-standup-notebook.prompt.md
+│       ├── investigate-error.prompt.md
+│       ├── troubleshoot-problem.prompt.md
+│       ├── incident-response.prompt.md
+│       └── performance-regression.prompt.md
 ├── .agents/skills/               # 13 Dynatrace domain knowledge files
 ├── .claude/skills/               # Symlinks for Claude Code compatibility
 ├── .vscode/
-│   └── mcp.json                  # Dynatrace MCP server configuration
-└── skills-lock.json              # Locked skill versions
+│   └── mcp.json                  # Dynatrace MCP server configuration (2 environments)
+└── demos/
+    └── ai-observability-demo.md  # 15-minute demo script for mixed audiences
 ```
 
 ---
