@@ -2,7 +2,7 @@
 description: Check the health of a service in production.
 ---
 
-Check the health of [service-name] in production.
+Check the health of my service in production.
 Infer service-name from current workspace if not provided. Ask user to confirm if not sure.
 
 Show me:
@@ -13,7 +13,3 @@ Show me:
 5. Any security vulnerabilities
 
 Use Dynatrace to gather data. Summarize if everything looks normal or if I need to investigate specific issues.
-
----
-
-**Related skills:** dt-dql-essentials, dt-obs-services, dt-obs-problems
