@@ -13,13 +13,16 @@ dynatrace-ai-workspace/
 ├── CHEATSHEET.md                 # Quick reference — 7 copy-paste DQL queries and critical rules
 ├── ARCHITECTURE.md               # How the workspace is built and how components connect
 ├── README.md                     # Setup guide and quick reference
+├── CLAUDE.md                     # Auto-loaded session briefing for Claude Code
 ├── skills-lock.json              # Locked skill versions
 ├── .gitignore
 ├── .github/
-│   ├── copilot-instructions.md   # Auto-loaded workspace rules every Copilot session
-│   └── prompts/                  # Investigation workflows
+│   ├── copilot-instructions.md   # Auto-loaded session briefing for GitHub Copilot
+│   └── prompts/                  # 7 investigation workflows
 │       ├── health-check.prompt.md
 │       ├── daily-standup.prompt.md
+│       ├── daily-standup-notebook.prompt.md
+│       ├── investigate-error.prompt.md
 │       ├── troubleshoot-problem.prompt.md
 │       ├── incident-response.prompt.md
 │       └── performance-regression.prompt.md
