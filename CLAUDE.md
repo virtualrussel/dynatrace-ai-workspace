@@ -20,7 +20,7 @@ All investigation workflows enforce this automatically.
 
 ## Prompts
 
-Type `/` to access these slash commands:
+Type `@` to access these slash commands:
 
 | Prompt | When to use |
 |---|---|

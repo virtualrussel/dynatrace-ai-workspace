@@ -255,7 +255,7 @@ Skills are domain knowledge files that teach Copilot how Dynatrace works — cor
 Prompts are pre-built investigation workflows available as slash commands.
 
 - **GitHub Copilot:** Type `/` in Copilot Chat (see `.github/prompts/`)
-- **Claude Code:** Type `/` in Claude chat or paste prompt content from `.github/prompts/`
+- **Claude Code:** Type `@` followed by the prompt name (e.g. `@health-check`)
 
 | Prompt | When to Use |
 |---|---|
