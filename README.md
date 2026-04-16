@@ -71,9 +71,9 @@ This workspace works with:
 
 Select your setup path below. Both receive the same skills, prompts, and MCP server access.
 
-**GitHub Copilot Path** → Follow Steps 1–6 below. Copilot loads `.github/copilot-instructions.md` automatically.
+**GitHub Copilot Path** → Follow Steps 1–6 below. `.github/copilot-instructions.md` is auto-loaded at the start of each Copilot session.
 
-**Claude Code Path** → Follow Steps 1–6. `CLAUDE.md` is auto-loaded at the start of each Claude Code session — no manual step required.
+**Claude Code Path** → Follow Steps 1–6 below. `CLAUDE.md` is auto-loaded at the start of each Claude Code session.
 
 ### 1. Clone the workspace
 
