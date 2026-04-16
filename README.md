@@ -4,16 +4,22 @@ An AI-powered observability workspace for Dynatrace — combining GitHub Copilot
 
 > **What this gives you:** Ask AI natural language questions about your Dynatrace environment and get accurate, production-aware answers — powered by verified domain knowledge, live API access, and pre-built investigation workflows.
 
+> **New here?** Start with [docs/ELI5.md](./docs/ELI5.md) for a quick setup, then read [docs/OVERVIEW.md](./docs/OVERVIEW.md) for the big-picture operating model.
+
 ---
 
 ## What's Inside
 
+Recommended reading order: [docs/ELI5.md](./docs/ELI5.md) → [docs/OVERVIEW.md](./docs/OVERVIEW.md) → [ARCHITECTURE.md](./ARCHITECTURE.md).
+
 ```
 dynatrace-ai-workspace/
-├── CHEATSHEET.md                 # Quick reference — workflows, outputs, dtctl, and key rules
-├── ARCHITECTURE.md               # How the workspace is built and how components connect
-├── ELI5.md                       # Beginner-friendly 15-minute install guide
 ├── README.md                     # Setup guide and quick reference
+├── docs/
+│   ├── ELI5.md                   # Beginner-friendly 15-minute install guide
+│   ├── OVERVIEW.md               # Newcomer guide: purpose, value, and operating model
+│   └── CHEATSHEET.md             # Quick reference — workflows, outputs, dtctl, and key rules
+├── ARCHITECTURE.md               # How the workspace is built and how components connect
 ├── CLAUDE.md                     # Auto-loaded session briefing for Claude Code
 ├── skills-lock.json              # Locked skill versions
 ├── .gitignore
@@ -77,6 +83,8 @@ cd dynatrace-ai-workspace
 Then open the folder in VS Code via **File → Open Folder**.
 
 ### 2. Update skills to latest *(optional)*
+
+If this is your first setup, skip this step and continue to Step 3.
 
 Skills are already included in this repo — cloning gives you everything you need. Run this only when you want to pull the latest skill updates from Dynatrace:
 
@@ -365,6 +373,9 @@ git push
 ## Related Resources
 
 - [ARCHITECTURE.md](./ARCHITECTURE.md) — How the workspace components connect
+- [docs/ELI5.md](./docs/ELI5.md) — Beginner-friendly 15-minute quick start
+- [docs/CHEATSHEET.md](./docs/CHEATSHEET.md) — Workflow picker and operational quick reference
+- [docs/OVERVIEW.md](./docs/OVERVIEW.md) — Business and operator-oriented purpose guide
 - [dynatrace-for-ai](https://github.com/Dynatrace/dynatrace-for-ai) — Skills and prompts source repo
 - [dtctl](https://github.com/dynatrace-oss/dtctl) — Dynatrace CLI for humans and AI agents
 - [Dynatrace MCP Server](https://docs.dynatrace.com/docs/shortlink/dynatrace-mcp-server) — Official MCP server docs

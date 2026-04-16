@@ -58,7 +58,7 @@ Skills are loaded automatically when relevant. You can also ask for one directly
 
 ## dtctl — terminal companion
 
-`dtctl` is the CLI-side of this workspace. Use it when you want to verify, query, or manage resources from the terminal rather than through chat.
+`dtctl` is the CLI-side of this workspace (all dtctl examples below are terminal commands). Use it when you want to verify, query, or manage resources from the terminal rather than through chat.
 
 | Task | Command |
 |------|---------|
@@ -104,8 +104,15 @@ Ask: *"What were the error patterns during the last problem on [service]?"* — 
 Default environment: `production-mcp` → https://guu84124.apps.dynatrace.com
 
 To switch for the session:
+
+This is a chat instruction to the AI assistant (not a terminal command).
+
 ```
+# Switch to sprint for this session
 "Use the sprint-mcp server for all queries in this session"
+
+# Switch back to production for this session
+"Use the production-mcp server for all queries in this session"
 ```
 
 ---

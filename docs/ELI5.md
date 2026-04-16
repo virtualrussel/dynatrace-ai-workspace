@@ -12,7 +12,7 @@ You need three things installed:
 |---|---|---|
 | [VS Code](https://code.visualstudio.com/) | Where you will work | Download and install |
 | GitHub Copilot or Claude Code | The AI brain | Copilot: sign in at github.com/features/copilot · Claude: sign in at claude.ai/code |
-| [Node.js](https://nodejs.org/) v18+ | Required to run the MCP server | Download LTS version |
+| [Node.js](https://nodejs.org/) v18+ | Required to run the MCP server — the live data bridge between the AI and your Dynatrace environment | Download LTS version |
 
 ---
 
@@ -31,7 +31,9 @@ Then open the folder in VS Code: **File → Open Folder**.
 > - `.github/copilot-instructions.md`
 > - `CLAUDE.md`
 >
-> See [README.md Step 4](./README.md#4-configure-your-sprint-environment-optional) for full instructions. This is optional — skip it if you only need the shared demo tenant.
+> See [README.md Step 4](../README.md#4-configure-your-sprint-environment-optional) for full instructions. This is optional — skip it if you only need the shared demo tenant.
+
+This guide is intentionally the fastest path for first-time setup; for full options (including sprint context and token-based auth), use [README.md](../README.md).
 
 ---
 
@@ -65,7 +67,7 @@ This activates the Dynatrace live data connection. The first time you use a prom
 
 ## Step 4 — Try It
 
-In Copilot Chat or Claude Code, type:
+In GitHub Copilot Chat, type this prompt. In Claude Code, type the same prompt (or use `@health-check` for a guided workflow):
 
 ```
 Using the production-mcp server, list the top 5 services by request volume in the last hour
@@ -96,4 +98,4 @@ If you see a table of services with request counts — you are live.
 
 ---
 
-For the full setup guide including sprint environments, token auth, and advanced configuration, see [README.md](./README.md).
+For the full setup guide including sprint environments, token auth, and advanced configuration, see [README.md](../README.md).

@@ -275,5 +275,3 @@ curl -fsSL https://raw.githubusercontent.com/dynatrace-oss/dtctl/main/install.sh
 | 7 investigation prompts | [github.com/Dynatrace/dynatrace-for-ai/prompts](https://github.com/Dynatrace/dynatrace-for-ai/tree/main/prompts) |
 | MCP server package | [github.com/dynatrace-oss/dynatrace-mcp](https://github.com/dynatrace-oss/dynatrace-mcp) |
 | dtctl CLI + skill | [github.com/dynatrace-oss/dtctl](https://github.com/dynatrace-oss/dtctl) |
-| CHEATSHEET.md | Quick reference for workflows, outputs, dtctl commands, and expected edge cases — focused on agentic workflows, not DQL syntax |
-| ELI5.md | Beginner-friendly 15-minute install guide |
