@@ -60,6 +60,8 @@ Skills are loaded automatically when relevant. You can also ask for one directly
 
 `dtctl` is the CLI-side of this workspace (all dtctl examples below are terminal commands). Use it when you want to verify, query, or manage resources from the terminal rather than through chat.
 
+Compatibility: use `dtctl` v0.26.0 or newer for `dtctl-release` skill workflows.
+
 | Task | Command |
 |------|---------|
 | Verify connection | `dtctl doctor` |

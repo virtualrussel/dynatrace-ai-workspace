@@ -64,7 +64,20 @@
     "dtctl": {
       "source": "dynatrace-oss/dtctl",
       "sourceType": "github",
+      "skillPath": ".agents/skills/dtctl/SKILL.md",
       "computedHash": "23a151ff42d26cd83bee2a2848c46ac00efd292d9943e30a313f827af6c84ed5"
+    },
+    "dtctl-release": {
+      "source": "dynatrace-oss/dtctl",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/dtctl-release/SKILL.md",
+      "computedHash": "f48a4a744653ea1463521604367f167a6f1880d2a7e7c4940180f617150c1045"
+    },
+    "pr-review": {
+      "source": "dynatrace-oss/dtctl",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/pr-review/SKILL.md",
+      "computedHash": "46bdda9c72a032189dc4e5459c5895610e30b6a3df6d990f2907329cb2f78ee4"
     }
   }
 }
