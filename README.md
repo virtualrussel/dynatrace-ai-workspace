@@ -53,7 +53,7 @@ dynatrace-ai-workspace/
 | [GitHub Copilot](https://github.com/features/copilot) | AI assistant (option 1) |
 | [Claude Code](https://claude.ai/code) | AI assistant (option 2) |
 | [Node.js](https://nodejs.org/) v18+ | Required to run the MCP server |
-| [dtctl](https://github.com/dynatrace-oss/dtctl) | **Required.** Dynatrace open-source CLI for agents & humans to manage observability resources (use v0.26.0 or newer) |
+| [dtctl](https://github.com/dynatrace-oss/dtctl) | **Required.** Dynatrace open-source CLI for agents & humans to manage observability resources (use v0.26.2 or newer) |
 | A Dynatrace environment | `https://<env>.apps.dynatrace.com` or `https://<env>.sprint.apps.dynatracelabs.com` |
 
 You must use one AI assistant path: **GitHub Copilot** or **Claude Code**.
@@ -107,8 +107,9 @@ npx skills add dynatrace-oss/dtctl
 `dtctl` is used for terminal-level verification and resource management. It is
 required for demo workflows in this workspace.
 
-> Compatibility note: use `dtctl` v0.26.0 or newer, which is required for
-> `dtctl-release` skill workflows.
+> Compatibility note: use `dtctl` v0.26.2 or newer. v0.26.2 adds
+> `--client-context` for `dtctl query` and `dtctl verify query`, which tags
+> DQL requests with investigation context for better traceability.
 
 ```bash
 # macOS / Linux — direct install (no package manager required)
@@ -360,6 +361,7 @@ dtctl doctor
 dtctl get workflows
 dtctl get notebooks
 dtctl query 'fetch dt.davis.problems | filter event.status == "ACTIVE" | limit 5'
+dtctl query --client-context "incident-response" 'fetch dt.davis.problems | filter event.status == "ACTIVE" | limit 5'
 
 # Switch between configured contexts
 dtctl config use-context production
